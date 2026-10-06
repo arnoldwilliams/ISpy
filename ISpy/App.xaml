@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISpy.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Warm, kid-friendly palette -->
+            <Color x:Key="Cream">#FFF8E7</Color>
+            <Color x:Key="Paper">#FFFFFF</Color>
+            <Color x:Key="Ink">#3A2E1F</Color>
+            <Color x:Key="InkSoft">#C9B79C</Color>
+            <Color x:Key="Accent">#E8734A</Color>
+            <Color x:Key="AccentSoft">#FBE3D8</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
