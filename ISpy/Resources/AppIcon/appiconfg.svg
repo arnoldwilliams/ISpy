@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 456">
+  <!-- Magnifying glass: the "I Spy" motif -->
+  <circle cx="205" cy="205" r="118" fill="none" stroke="#FFF8E7" stroke-width="34" />
+  <line x1="292" y1="292" x2="380" y2="380" stroke="#E8734A" stroke-width="46" stroke-linecap="round" />
+</svg>
