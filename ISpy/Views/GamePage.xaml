@@ -41,31 +41,30 @@
         <!-- Checklist -->
         <ScrollView Grid.Row="2" Orientation="Horizontal"
                     HorizontalScrollBarVisibility="Never">
-            <HorizontalStackLayout x:Name="ChecklistLayout" Spacing="10" Padding="2">
-                <HorizontalStackLayout.BindableLayout>
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate x:DataType="vm:ChecklistItemViewModel">
-                            <Border WidthRequest="104" HeightRequest="128"
-                                    Stroke="{StaticResource InkSoft}" StrokeThickness="2"
-                                    BackgroundColor="{StaticResource Paper}" Padding="8">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="16" />
-                                </Border.StrokeShape>
-                                <Grid RowDefinitions="*,Auto,Auto" RowSpacing="4">
-                                    <Image Grid.Row="0" Source="{Binding ImageFile}"
-                                           Aspect="AspectFit" />
-                                    <Label Grid.Row="1" Text="{Binding Name}"
-                                           FontSize="13" HorizontalTextAlignment="Center"
-                                           TextColor="{StaticResource Ink}" LineBreakMode="TailTruncation" />
-                                    <Label Grid.Row="2" Text="{Binding StatusGlyph}"
-                                           FontSize="20" FontAttributes="Bold"
-                                           HorizontalTextAlignment="Center"
-                                           TextColor="{StaticResource Accent}" />
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-                </HorizontalStackLayout.BindableLayout>
+            <HorizontalStackLayout x:Name="ChecklistLayout" Spacing="10" Padding="2"
+                                   BindableLayout.ItemsSource="{Binding Checklist}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="vm:ChecklistItemViewModel">
+                        <Border WidthRequest="104" HeightRequest="128"
+                                Stroke="{StaticResource InkSoft}" StrokeThickness="2"
+                                BackgroundColor="{StaticResource Paper}" Padding="8">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="16" />
+                            </Border.StrokeShape>
+                            <Grid RowDefinitions="*,Auto,Auto" RowSpacing="4">
+                                <Image Grid.Row="0" Source="{Binding ImageFile}"
+                                       Aspect="AspectFit" />
+                                <Label Grid.Row="1" Text="{Binding Name}"
+                                       FontSize="13" HorizontalTextAlignment="Center"
+                                       TextColor="{StaticResource Ink}" LineBreakMode="TailTruncation" />
+                                <Label Grid.Row="2" Text="{Binding StatusGlyph}"
+                                       FontSize="20" FontAttributes="Bold"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="{StaticResource Accent}" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
             </HorizontalStackLayout>
         </ScrollView>
 
